@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,9 @@ import {
   BasketCounter,
 } from './styles';
 
-function Header({ navigation, cartSize }) {
+export default function Header({ navigation }) {
+  const cartSize = useSelector(state => state.cart.length);
+
   return (
     <Wrapper>
       <Container>
@@ -32,14 +34,4 @@ Header.propTypes = {
   navigation: PropTypes.shape({
     navigate: PropTypes.func,
   }).isRequired,
-  cartSize: PropTypes.number.isRequired,
 };
-
-const mapStateToProps = state => ({
-  cartSize: state.cart.length,
-});
-
-export default connect(
-  mapStateToProps,
-  null
-)(Header);

@@ -1,10 +1,10 @@
 <h1 align="center">
     <img alt="Icons made by Flaticon" src="https://image.flaticon.com/icons/svg/1108/1108832.svg" height="124" width="124">
     <br>
-    Rocketshoes Mobile
+    Rocketshoes Mobile Hooks
 </h1>
 
-This small project is the mobile version of [Rocketshoes](https://github.com/giovanniantonaccio/Rocketshoes), an application developed during [Rocketseat Bootcamp](https://rocketseat.com.br/bootcamp) using Redux and Redux Saga.
+This small project is the mobile version of [Rocketshoes](https://github.com/giovanniantonaccio/Rocketshoes), an application developed during [Rocketseat Bootcamp](https://rocketseat.com.br/bootcamp) using Redux and Redux Saga, but now using the React Hooks.
 
 The objective here was not to build a real ecommerce, but to demonstrate how Redux and Redux Saga could be used in order to help in the development of applications that need to share states between components.
 
@@ -17,7 +17,6 @@ The fake data comes from Json Server :)
 <p align="center">
   <img alt="Demo" src="https://media.giphy.com/media/Qajo2DxZ9EDbufT0Uv/giphy.gif">
 </p>
-
 
 ## :rocket: Installation
 
